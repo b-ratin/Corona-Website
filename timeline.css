@@ -1,0 +1,153 @@
+#navbar ul{
+    display:flex;
+    justify-content:center;
+    align-content:center;
+}
+#navbar ul li{
+    list-style: none;
+}
+#navbar ul li a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 0.875em;
+    padding: 1em;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    /*transition: border-bottom 2s;*/
+}
+#navbar ul li a:hover{
+    border-bottom: 3px solid;
+    background-color: rgba(206, 170, 170, 0.267);
+    text-transform: uppercase;
+}
+body{
+    background: url("timelinebg.jpeg") no-repeat center;
+    background-size: cover;
+    font:normal "Helvetica Neue";
+    color:white;
+    overflow-x: hidden;
+    padding-bottom: 50px;
+}
+.intro{
+    padding:100px 0;
+}
+.container{
+    width:90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.container h1{
+    font-size: 5rem;
+}
+.timeline ul{
+    list-style-type: none;
+    padding:100px 0;
+}
+.timeline ul li{
+    position: relative;
+    background:white;
+    width: 6px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.timeline ul li div{
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    padding:15px;
+    background-color: #F45B69;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 2s ease-in-out;
+}
+.timeline ul li:nth-child(odd) div{
+    left:45px;
+    transform: translate(150px);
+}
+.timeline ul li:nth-child(even) div{
+    left: -439px;
+    transform: translate(-150px);
+}
+.flex-child{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    color: white;
+    font-size:1rem;
+    font-family: /*'Gill Sans MT', */Calibri/*, 'Trebuchet MS', sans-serif;*/
+}
+.timeline ul li.in-view div{
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+/*footer part*/
+.footer{
+    background-color: black;
+    display: flex;
+}
+#container_3 ul li a:hover{
+    border-right: 3px solid;
+    background-color: rgba(206, 170, 170, 0.267);
+    text-transform: uppercase;
+}
+#container_3 ul li{
+    padding-top:1rem;
+}
+#container_3{
+    text-align: right;
+}
+#whatsapp a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 1em;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    /*transition: border-bottom 2s;*/
+}
+#whatsapp a:hover{
+    color:rgb(241, 47, 47) ;
+}
+#whatsapp{
+    margin-top: 10px;
+    background-color: rgb(241, 47, 47);
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border:none;
+    font-size: 30px;
+    border-radius: 20rem;
+}
+#whatsapp:hover{
+    background-color:white /* rgb(252, 73, 73)*/;
+    color: rgb(241, 47, 47)/* white*/;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: capitalize;
+    white-space: nowrap;
+    /*transition: border-bottom 2s;*/
+}
+#container_3 ul li{
+    list-style: none;
+}
+#container_3 ul li a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 0.875em;
+    padding: 1em;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    /*transition: border-bottom 2s;*/
+}
+.timeline ul li div time{
+    font-weight: bold;
+}

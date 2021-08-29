@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="navbar">
+  <div class="container">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="timeline.html">Timeline</a></li>
+          <li><a href="coronatesting.html">Corona Testing</a></li>
+          <li><a href="https://covid19india.org/">Tracking</a></li>
+          <li><a href="https://www.aarogyasetu.gov.in/" class="Aarogya"><img src="https://www.aarogyasetu.gov.in/wp-content/themes/setu/assets/images/arogya_svg.png"height="20"> Aarogya Setu</a></li>
+      </ul>
+  </div>
+</div>
+
+<div class="regform">
+	<h1>Information Form</h1></div>
+
+  <div class ="main">
+<form id ="testForm">
+  <div id="name">
+  <h2 class ="name">Name</h2>
+  <input id ="firstname" type="text" required name ="first_name"><br>
+  <label id="firstlabel"> first name</label>
+  <input id ="lastname" type="text" required name ="last_name"><br>
+  <label id="lastlabel"> last name</label>
+  </div>
+
+  <h2 class ="name">Profession</h2>
+  <input id ="profession" type="text" name ="profession" placeholder="student/doctor/teacher">
+  
+  <h2 class ="name">Email</h2>
+  <input id ="email" type="text" required name ="email">
+  <h2 class ="name">Date Of Birth</h2>
+  <input id ="dateofbirth" type="date" required name ="dateofbirth">
+  
+  <h2 class ="name">Mobile Number</h2>
+  <input id ="mobile" type="text" name ="mobile" required pattern="[6789][0-9]{9}">
+
+  
+  <h2 class="name"> State</h2>
+  <select name="state" id="state" class="form-control">
+    <option disabled selected>Choose Your State</option>
+    <option value="Andhra Pradesh">Andhra Pradesh</option>
+    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+    <option value="Assam">Assam</option>
+    <option value="Bihar">Bihar</option>
+    <option value="Chandigarh">Chandigarh</option>
+    <option value="Chhattisgarh">Chhattisgarh</option>
+    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+    <option value="Daman and Diu">Daman and Diu</option>
+    <option value="Delhi">Delhi</option>
+    <option value="Lakshadweep">Lakshadweep</option>
+    <option value="Puducherry">Puducherry</option>
+    <option value="Goa">Goa</option>
+    <option value="Gujarat">Gujarat</option>
+    <option value="Haryana">Haryana</option>
+    <option value="Himachal Pradesh">Himachal Pradesh</option>
+    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+    <option value="Jharkhand">Jharkhand</option>
+    <option value="Karnataka">Karnataka</option>
+    <option value="Kerala">Kerala</option>
+    <option value="Madhya Pradesh">Madhya Pradesh</option>
+    <option value="Maharashtra">Maharashtra</option>
+    <option value="Manipur">Manipur</option>
+    <option value="Meghalaya">Meghalaya</option>
+    <option value="Mizoram">Mizoram</option>
+    <option value="Nagaland">Nagaland</option>
+    <option value="Odisha">Odisha</option>
+    <option value="Punjab">Punjab</option>
+    <option value="Rajasthan">Rajasthan</option>
+    <option value="Sikkim">Sikkim</option>
+    <option value="Tamil Nadu">Tamil Nadu</option>
+    <option value="Telangana">Telangana</option>
+    <option value="Tripura">Tripura</option>
+    <option value="Uttar Pradesh">Uttar Pradesh</option>
+    <option value="Uttarakhand">Uttarakhand</option>
+    <option value="West Bengal">West Bengal</option>
+    </select>
+
+<h2 id="travel"> Have you travelled to COVID affected country within last 1 month?</h2>
+<div id="travel">
+  <input type="radio"  name="option" value="Yes"> Yes
+ <input type="radio"  name="option" value="No" checked="checked"> No
+</div>
+
+<h2 id="symptoms">Do you have any of the following symptoms ?</h2>
+<div class="arrange">
+<input type="checkbox" name="symptoms" value="Fever" id="cb1"><label for="cb1">Fever</label><br>
+<input type="checkbox" name="symptoms" value="Dry Cough" id="cb2"><label for="cb2">Dry Cough</label><br>
+<input type="checkbox" name="symptoms" value="Cold" id="cb3"><label for="cb3">Cold</label><br>
+<input type="checkbox" name="symptoms" value="Breathing Issues" id="cb4"><label for="cb3">Breathing Issues</label><br>
+<input type="checkbox" name="symptoms" value="Chest Pain" id="cb5"><label for="cb3">Chest Pain</label><br>
+<input type="checkbox" name="symptoms" value="none" id="cb6"><label for="cb3">None</label><br>
+</div>
+<input id="submit" type="submit">
+
+</p>
+<!--<h2 id="centers"> Testing Centres around you: <span id="result"></span>--><br>
+</div>
+</form>
+</div>
+<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase.js"></script>
+<script  src="./corona-test.js"></script>
+<script  src="homestyle.js"></script>
+
+</body>
+</html>
+
